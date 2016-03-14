@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Panda_Helloworld>
+            <version>0.1.0</version>    <!-- Version of module -->
+        </Panda_Helloworld>
+    </modules>
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Panda_Helloworld</module>
+                    <frontName>helloworld</frontName>  <!-- This is the URL
+ of the module. i.e www.yourmagento.com/index.php/helloworld will be the url of your module. -->
+                </args>
+            </helloworld>
+        </routers>
+    </frontend>
+    <global>
+        
+        <helpers>
+            <helloworld>
+                <class>Panda_Helloworld_Helper</class> 
+<!-- Path of Helper Files -->
+            </helloworld>
+        </helpers>
+    </global>
+</config>
